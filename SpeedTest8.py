@@ -15,8 +15,8 @@ num_iterations = 50
 array_size = 10_000_000  # Use larger array for clearer results
 
 # Configure your CPU here (adjust for your specific CPU)
-P_CORES = 8   # Number of P-cores
-E_CORES = 4   # Number of E-cores
+P_CORES = 64   # Number of P-cores
+E_CORES = 0   # Number of E-cores
 # P-cores are typically indices 0 to P_CORES-1 on Intel hybrid CPUs
 P_CORE_INDICES = list(range(P_CORES))
 ALL_CORE_INDICES = list(range(P_CORES + E_CORES))
